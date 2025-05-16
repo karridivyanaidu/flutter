@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f6ff;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.auth-buttons a {
+  margin-left: 15px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.auth-buttons .login {
+  color: #6c63ff;
+}
+
+.auth-buttons .register {
+  background-color: #ffcf40;
+  color: black;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+.left-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.left-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #2c2260;
+}
+
+.left-text p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.start-btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.right-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.phone-card {
+  background: linear-gradient(135deg, #6c63ff, #937eff);
+  padding: 20px;
+  border-radius: 40px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.inner-card {
+  background: white;
+  border-radius: 30px;
+  padding: 30px 20px;
+  color: #333;
+}
+
+.profile-pic {
+  background: url('https://via.placeholder.com/100x100') center/cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+}
+
+.inner-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.inner-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #6c63ff;
+}
+
+.inner-card button {
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 5%;
+  text-align: center;
+  background-color: #6c63ff;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2c2260;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f1edff;
+  padding: 30px 20px;
+  width: 240px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #4b3c85;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.journal h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c2260;
+    display: flex;
+    justify-content: center;
+}
+
+.journal p {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+  background: #f9f9ff;
+}
