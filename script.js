@@ -82,4 +82,8 @@ function clearFields() {
   selectedEntryIndex = null;
 }
 
+function redirectToHome() {
+  window.location.href = "fake.html"; // Link to your login page
+}
+
 renderEntries();
