@@ -1,0 +1,196 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color:  #2a2740;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.logo span {
+  background-color: #e53935;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #6200ea;
+  font-weight: 500;
+}
+
+nav a.active {
+  border-bottom: 2px solid #e53935;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: #10002b;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #6c63ff;
+}
+
+.hero-text h1 span {
+  background-color: #e53935;
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 5px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.hero-text button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: #1976d2;
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  background-color: #10002b;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.plan {
+  flex: 1 1 200px;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  color: #6200ea;
+  margin-bottom: 1rem;
+}
+
+.plan.pro h2 span,
+.plan.pro-plus h2 span {
+  background-color: #e53935;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+}
+
+.features {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f1edff;
+}
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.features p {
+  color: #aaa;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: #2a2740;
+  border-radius: 14px;
+  padding: 30px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 18px rgba(212, 110, 255, 0.2);
+}
+.feature-card img {
+  height: 50px;
+  margin-bottom: 12px;
+}
+.feature-card span {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+.pro-badge {
+  background: #ff3562;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+i {
+    margin: 10px;
+    color:#fff
+}
