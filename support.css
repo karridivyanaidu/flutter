@@ -100,8 +100,63 @@ body {
   background-color: #aaa;
 }
 
-.support-buttons {
+.info {
   margin-top: 30px;
+  background: white;
+  padding: 30px 40px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.form-control {
+  height:25px;
+  margin: 2px;
+  width: 500px;
+}
+
+form {
+  background-color: #f4f0ff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.1);
+  max-width: 400px;
+  margin: auto;
   display: flex;
+  flex-direction: column;
   gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  width: 300px;
+}
+
+form input {
+  padding: 14px 18px;
+  border: 1px solid #d8ceff;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: white;
+  transition: border 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+form button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #574fd6;
 }
