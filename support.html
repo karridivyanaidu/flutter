@@ -18,17 +18,25 @@
     <div class="support-box">
       <h1>Need Help? Having problems?</h1>
       <p>
-        Upgrade to Flutter PRO to receive premium support and help from the creators of Flutter Diary.
+        Upgrade to flutter PRO to receive premium support and help from the creators of Flutter Diary.
         <br />
-        <a href="#">What else do I get with Flutter PRO?</a>
+        <a href="pro.html">What else do I get with Flutter PRO?</a>
       </p>
       <button class="primary">Upgrade Now</button>
     </div>
 
-    <div class="support-buttons">
-      <button class="primary">View All Help Topics</button>
-      <button class="secondary" onclick="goHome()">Return Home</button>
+    <div class="info">
+      <h1>Contact Us</h1>
+        <form onsubmit="login(event)">
+        <input type="text" id="name" placeholder="your name" />
+        <input type="text" id="gmail" placeholder="your gmail" />
+        <input type="text" id="message" placeholder="your message" />
+        
+        <button type="submit">Send Message</button>
+      </form>
+  
     </div>
+
   </main>
 
   <script src="support.js"></script>
