@@ -44,35 +44,77 @@ document.getElementById("saveEntry").addEventListener("click", () => {
 
   if (!title) return;
 
-  const entry = {
-    title,
-    content,
-    mood: currentMood
-  };
+  Swal.fire({
+    title: 'Save this entry?',
+    text: "Do you want to save your diary entry?",
+    icon: 'question',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, save it',
+    cancelButtonText: 'Cancel',
+    confirmButtonColor: '#7D4AEA', // Purple
+    cancelButtonColor: '#aaa',
+    background: '#2E234A',
+    color: '#F8F6FF'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const entry = {
+        title,
+        content,
+        mood: currentMood
+      };
 
-  if (selectedEntryIndex !== null) {
-    entries[selectedEntryIndex] = entry;
-  } else {
-    entries.push(entry);
-  }
+      if (selectedEntryIndex !== null) {
+        entries[selectedEntryIndex] = entry;
+      } else {
+        entries.push(entry);
+      }
 
-  renderEntries();
-  clearFields();
+      renderEntries();
+      clearFields();
+
+      Swal.fire({
+        title: 'Saved!',
+        text: 'Your entry has been saved.',
+        icon: 'success',
+        confirmButtonColor: '#7D4AEA',
+        background: '#2E234A',
+        color: '#F8F6FF'
+      });
+    }
+  });
 });
 
-document.getElementById("deleteEntry").addEventListener("click", () => {
-  if (selectedEntryIndex !== null) {
-    entries.splice(selectedEntryIndex, 1);
-    renderEntries();
-    clearFields();
-  }
-});
 
 function deleteEntry(index) {
-  entries.splice(index, 1);
-  renderEntries();
-  clearFields();
+  Swal.fire({
+    title: 'Delete this entry?',
+    text: "This action cannot be undone!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#7D4AEA',
+    confirmButtonText: 'Yes, delete it!',
+    background: '#2E234A',
+    color: '#F8F6FF'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      entries.splice(index, 1);
+      renderEntries();
+      clearFields();
+
+      Swal.fire({
+        title: 'Deleted!',
+        text: 'Your entry has been removed.',
+        icon: 'success',
+        timer: 1500,
+        showConfirmButton: false,
+        background: '#2E234A',
+        color: '#F8F6FF'
+      });
+    }
+  });
 }
+
 
 function clearFields() {
   entryTitle.value = "";
@@ -83,7 +125,24 @@ function clearFields() {
 }
 
 function redirectToHome() {
-  window.location.href = "fake.html"; // Link to your login page
+  Swal.fire({
+    title: 'Are you sure you want to logout?',
+    icon: 'question',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, logout',
+    cancelButtonText: 'Cancel',
+    confirmButtonColor: '#d33',       // Red
+    cancelButtonColor: '#7D4AEA',     // Purple
+    background: '#2E234A',
+    color: '#F8F6FF'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // Redirect if confirmed
+      window.location.href = "fake.html";  // Replace with your actual login or landing page
+    }
+  });
 }
+
+
 
 renderEntries();
