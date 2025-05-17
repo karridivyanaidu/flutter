@@ -67,39 +67,6 @@ body {
   text-decoration: underline;
 }
 
-.primary {
-  background-color: #6c63ff;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  margin-top: 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.primary:hover {
-  background-color: #574fd6;
-}
-
-.secondary {
-  background-color: #ccc;
-  color: #333;
-  padding: 12px 14px;
-  border: none;
-  margin-top: 20px;
-  margin-left: 10px;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.secondary:hover {
-  background-color: #aaa;
-}
-
 .info {
   margin-top: 30px;
   background: white;
