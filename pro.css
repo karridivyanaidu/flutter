@@ -194,3 +194,12 @@ i {
     margin: 10px;
     color:#fff
 }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 0.9rem;
+  background: #2a2740;
+}
