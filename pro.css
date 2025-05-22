@@ -126,6 +126,11 @@ nav a.active {
   border-radius: 5px;
 }
 
+.fee {
+  color: #6200ea;
+  font-weight: 600;
+}
+
 .features {
   text-align: center;
   padding: 60px 20px;
